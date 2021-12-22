@@ -36,7 +36,7 @@ Em adição as entrevistas de código, design de sistemas é um **componente obr
 Tópicos adicionais para uma entrevista:
 
 * [Guia de estudos](#guia-de-estudos)
-* [Como abordar questões de design de sistemas em entrevistas](#how-to-approach-a-system-design-interview-question)
+* [Como abordar questões de design de sistemas em entrevistas](#como-abordar-questões-de-design-de-sistemas-em-entrevistas)
 * [Questões sobre design de sistemas, **com soluções**](#system-design-interview-questions-with-solutions)
 * [Questões sobre orientação a objetos, **com soluções**](#object-oriented-design-interview-questions-with-solutions)
 * [Questões adicionais sobre design de sistemas](#additional-system-design-interview-questions)
@@ -99,46 +99,46 @@ Revise o [Guia para Contribuições](CONTRIBUTING.md).
   <br/>
 </p>
 
-* [System design topics: start here](#system-design-topics-start-here)
-    * [Step 1: Review the scalability video lecture](#step-1-review-the-scalability-video-lecture)
-    * [Step 2: Review the scalability article](#step-2-review-the-scalability-article)
-    * [Next steps](#next-steps)
-* [Performance vs scalability](#performance-vs-scalability)
-* [Latency vs throughput](#latency-vs-throughput)
-* [Availability vs consistency](#availability-vs-consistency)
-    * [CAP theorem](#cap-theorem)
+* [Tópicos em Design de Sistamas: começe aqui](#system-design-topics-start-here)
+    * [Passo 1: Revisão de Escalabilidade video aula (em Inglês)](#step-1-review-the-scalability-video-lecture)
+    * [Passo 2: Revisão de Escalabilidade artigo (em Inglês)](#step-2-review-the-scalability-article)
+    * [Próximos passos](#next-steps)
+* [Desempenho vs escalabilidade](#performance-vs-scalability)
+* [Latência vs vazão (_throughput_)](#latency-vs-throughput)
+* [Disponibilidade vs Consistência](#availability-vs-consistency)
+    * [CAP teorema](#cap-theorem)
         * [CP - consistency and partition tolerance](#cp---consistency-and-partition-tolerance)
         * [AP - availability and partition tolerance](#ap---availability-and-partition-tolerance)
-* [Consistency patterns](#consistency-patterns)
-    * [Weak consistency](#weak-consistency)
-    * [Eventual consistency](#eventual-consistency)
-    * [Strong consistency](#strong-consistency)
-* [Availability patterns](#availability-patterns)
+* [Padrões de Consistency (consistência)](#consistency-patterns)
+    * [Consistência Fraca](#weak-consistency)
+    * [Consistência Eventual](#eventual-consistency)
+    * [Consistência Forte](#strong-consistency)
+* [Padrôes de Availability (disponibilidade)](#availability-patterns)
     * [Fail-over](#fail-over)
-    * [Replication](#replication)
-    * [Availability in numbers](#availability-in-numbers)
+    * [Replicação](#replication)
+    * [Availability em números](#availability-in-numbers)
 * [Domain name system](#domain-name-system)
 * [Content delivery network](#content-delivery-network)
     * [Push CDNs](#push-cdns)
     * [Pull CDNs](#pull-cdns)
-* [Load balancer](#load-balancer)
-    * [Active-passive](#active-passive)
-    * [Active-active](#active-active)
+* [Balanceamento de Carga (Load balancer)](#load-balancer)
+    * [Ativo-passivo](#active-passive)
+    * [Ativo-ativo](#active-active)
     * [Layer 4 load balancing](#layer-4-load-balancing)
     * [Layer 7 load balancing](#layer-7-load-balancing)
-    * [Horizontal scaling](#horizontal-scaling)
+    * [Escalando horizontalmente](#horizontal-scaling)
 * [Reverse proxy (web server)](#reverse-proxy-web-server)
     * [Load balancer vs reverse proxy](#load-balancer-vs-reverse-proxy)
-* [Application layer](#application-layer)
-    * [Microservices](#microservices)
-    * [Service discovery](#service-discovery)
-* [Database](#database)
+* [Camada de aplicação](#application-layer)
+    * [Microserviços](#microservices)
+    * [Descoberta de servições](#service-discovery)
+* [Banco de Dados (Database)](#database)
     * [Relational database management system (RDBMS)](#relational-database-management-system-rdbms)
-        * [Master-slave replication](#master-slave-replication)
-        * [Master-master replication](#master-master-replication)
-        * [Federation](#federation)
-        * [Sharding](#sharding)
-        * [Denormalization](#denormalization)
+        * [Master-slave replicação](#master-slave-replication)
+        * [Master-master replicaçãon](#master-master-replication)
+        * [Federação](#federation)
+        * [Particionamento (sharding)](#sharding)
+        * [Denormalização](#denormalization)
         * [SQL tuning](#sql-tuning)
     * [NoSQL](#nosql)
         * [Key-value store](#key-value-store)
@@ -147,39 +147,39 @@ Revise o [Guia para Contribuições](CONTRIBUTING.md).
         * [Graph Database](#graph-database)
     * [SQL or NoSQL](#sql-or-nosql)
 * [Cache](#cache)
-    * [Client caching](#client-caching)
-    * [CDN caching](#cdn-caching)
-    * [Web server caching](#web-server-caching)
-    * [Database caching](#database-caching)
-    * [Application caching](#application-caching)
-    * [Caching at the database query level](#caching-at-the-database-query-level)
-    * [Caching at the object level](#caching-at-the-object-level)
-    * [When to update the cache](#when-to-update-the-cache)
+    * [Cache de cliente](#client-caching)
+    * [Cache de CDN](#cdn-caching)
+    * [Cache Web server](#web-server-caching)
+    * [Cache de base de dados](#database-caching)
+    * [Cache de aplicação](#application-caching)
+    * [Cache em nível de database query](#caching-at-the-database-query-level)
+    * [Cache em nível de objeto](#caching-at-the-object-level)
+    * [Quando atualizar a cache](#when-to-update-the-cache)
         * [Cache-aside](#cache-aside)
         * [Write-through](#write-through)
         * [Write-behind (write-back)](#write-behind-write-back)
         * [Refresh-ahead](#refresh-ahead)
-* [Asynchronism](#asynchronism)
+* [Assincronismo](#asynchronism)
     * [Message queues](#message-queues)
     * [Task queues](#task-queues)
     * [Back pressure](#back-pressure)
-* [Communication](#communication)
+* [Comunicação](#communication)
     * [Transmission control protocol (TCP)](#transmission-control-protocol-tcp)
     * [User datagram protocol (UDP)](#user-datagram-protocol-udp)
     * [Remote procedure call (RPC)](#remote-procedure-call-rpc)
     * [Representational state transfer (REST)](#representational-state-transfer-rest)
-* [Security](#security)
-* [Appendix](#appendix)
-    * [Powers of two table](#powers-of-two-table)
-    * [Latency numbers every programmer should know](#latency-numbers-every-programmer-should-know)
-    * [Additional system design interview questions](#additional-system-design-interview-questions)
-    * [Real world architectures](#real-world-architectures)
-    * [Company architectures](#company-architectures)
+* [Segurança](#security)
+* [Appendice](#appendix)
+    * [Tábela potências de dois](#powers-of-two-table)
+    * [Números de latência que todo programador deveria conhecer](#latency-numbers-every-programmer-should-know)
+    * [Questôes adicionais de design de sistemas](#additional-system-design-interview-questions)
+    * [Arquiteturas do mundo real](#real-world-architectures)
+    * [Arquiteturas de empresas](#company-architectures)
     * [Company engineering blogs](#company-engineering-blogs)
-* [Under development](#under-development)
-* [Credits](#credits)
-* [Contact info](#contact-info)
-* [License](#license)
+* [Em desenvolvimento](#under-development)
+* [Creditos](#credits)
+* [Informação de Contato](#contact-info)
+* [Licença](#license)
 
 ## Guia de Estudos
 
@@ -203,42 +203,42 @@ Normalmente, espera-se que candidatos com mais experiência tenham conhecimento 
 
 Começe a estudar de forma mais ampla e se aprofunde em algumas áreas. Isso irá ajuda-lo a entender um pouco sobre os diversos tópicos chaves em design de sistemas. Ajuste o guia baseando-se no seu tempo disponível, na sua experiência, para as posições que você está pleiteano e para quais empresas você fará uma entrevista.
 
-* **Short timeline** - Aim for **breadth** with system design topics.  Practice by solving **some** interview questions.
-* **Medium timeline** - Aim for **breadth** and **some depth** with system design topics.  Practice by solving **many** interview questions.
-* **Long timeline** - Aim for **breadth** and **more depth** with system design topics.  Practice by solving **most** interview questions.
+* **Prazo Curto** - Estude os tópicos de design de sistemas de forma **ampla**. Pratique e tente resolver **algumas** questões de entrevistas.
+* **Prazo Médio** - Estude os tópicos de design de sistemas de forma **ampla** e **aprofunde** em alguns tópicos. Pratique e tente resolver **muitas** questões de entrevistas
+* **Prazo Longo** - Estude os tópicos de design de sistemas de forma **ampla** e **aprofunde** em diversos tópicos. Pratique e tente resolver a **maioria** das questões de entrevistas.
 
-| | Short | Medium | Long |
+| | Curto | Médio | Longo |
 |---|---|---|---|
-| Read through the [System design topics](#index-of-system-design-topics) to get a broad understanding of how systems work | :+1: | :+1: | :+1: |
-| Read through a few articles in the [Company engineering blogs](#company-engineering-blogs) for the companies you are interviewing with | :+1: | :+1: | :+1: |
-| Read through a few [Real world architectures](#real-world-architectures) | :+1: | :+1: | :+1: |
-| Review [How to approach a system design interview question](#how-to-approach-a-system-design-interview-question) | :+1: | :+1: | :+1: |
-| Work through [System design interview questions with solutions](#system-design-interview-questions-with-solutions) | Some | Many | Most |
-| Work through [Object-oriented design interview questions with solutions](#object-oriented-design-interview-questions-with-solutions) | Some | Many | Most |
-| Review [Additional system design interview questions](#additional-system-design-interview-questions) | Some | Many | Most |
+| Leia os [Tópicos em Design de Sistemas](#index-of-system-design-topics) para ter uma ideia de forma ampla de como os sistemas funcionam | :+1: | :+1: | :+1: |
+| Leia alguns artigos do [Company engineering blogs](#company-engineering-blogs) para as companhias as quais você sera entrevistado | :+1: | :+1: | :+1: |
+| Leia sobre algumas das [Real world architectures](#real-world-architectures) | :+1: | :+1: | :+1: |
+| Revise [Como abordar questões de design de sistemas e entrevistas](#como-abordar-questões-de-design-de-sistemas-em-entrevistas) | :+1: | :+1: | :+1: |
+| Resolver [System design interview questions with solutions](#system-design-interview-questions-with-solutions) | Alguns | Muitos | Maioria |
+| Resolver [Object-oriented design interview questions with solutions](#object-oriented-design-interview-questions-with-solutions) | Alguns | Muitos | Maioria |
+| Revisão [Additional system design interview questions](#additional-system-design-interview-questions) | Alguns | Muitos | Maioria |
 
-## How to approach a system design interview question
+## Como abordar questões de design de sistemas em entrevistas
 
-> How to tackle a system design interview question.
+> Como abordar uma questão de design de sistemas em uma entrevista.
 
-The system design interview is an **open-ended conversation**.  You are expected to lead it.
+Uma entrevista de design de sistemas é uma **conversa aberta**. É esperado que você conduza essa conversa.
 
-You can use the following steps to guide the discussion.  To help solidify this process, work through the [System design interview questions with solutions](#system-design-interview-questions-with-solutions) section using the following steps.
+Você pode usar os seguintes passos para conduzir a discussão. Para ajudar a solidificar esse process, tente trabalhar com a seção [System design interview questions with solutions](#system-design-interview-questions-with-solutions) usando os seguintes passos.
 
-### Step 1: Outline use cases, constraints, and assumptions
+### Passo 1: Entenda os casos de uso, restrições e suposições
 
-Gather requirements and scope the problem.  Ask questions to clarify use cases and constraints.  Discuss assumptions.
+Reúna os requerimentos e o escopo do problema. Faça perguntas para entender os casos de uso e as restrições. Discuta as suposições.
 
-* Who is going to use it?
-* How are they going to use it?
-* How many users are there?
-* What does the system do?
-* What are the inputs and outputs of the system?
-* How much data do we expect to handle?
-* How many requests per second do we expect?
-* What is the expected read to write ratio?
+* Quem vai usar isso?
+* Como vão usar?
+* Quantos usuários?
+* O que o sistema faz?
+* Quais são as entradas e saídas esperadas?
+* Qual o volume de dados?
+* Quantas requisições por segundo?
+* Qual a proporção de leitura e escrita esperada?
 
-### Step 2: Create a high level design
+### Passo 2: Criar um design em alto nível
 
 Outline a high level design with all important components.
 
