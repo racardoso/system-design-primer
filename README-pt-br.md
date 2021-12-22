@@ -1,47 +1,45 @@
 *[English](README.md) ∙ [日本語](README-ja.md) ∙ [简体中文](README-zh-Hans.md) ∙ [繁體中文](README-zh-TW.md) | [العَرَبِيَّة‎](https://github.com/donnemartin/system-design-primer/issues/170) ∙ [বাংলা](https://github.com/donnemartin/system-design-primer/issues/220) ∙ [Português do Brasil](README-pt-br.md) ∙ [Deutsch](https://github.com/donnemartin/system-design-primer/issues/186) ∙ [ελληνικά](https://github.com/donnemartin/system-design-primer/issues/130) ∙ [עברית](https://github.com/donnemartin/system-design-primer/issues/272) ∙ [Italiano](https://github.com/donnemartin/system-design-primer/issues/104) ∙ [한국어](https://github.com/donnemartin/system-design-primer/issues/102) ∙ [فارسی](https://github.com/donnemartin/system-design-primer/issues/110) ∙ [Polski](https://github.com/donnemartin/system-design-primer/issues/68) ∙ [русский язык](https://github.com/donnemartin/system-design-primer/issues/87) ∙ [Español](https://github.com/donnemartin/system-design-primer/issues/136) ∙ [ภาษาไทย](https://github.com/donnemartin/system-design-primer/issues/187) ∙ [Türkçe](https://github.com/donnemartin/system-design-primer/issues/39) ∙ [tiếng Việt](https://github.com/donnemartin/system-design-primer/issues/127) ∙ [Français](https://github.com/donnemartin/system-design-primer/issues/250) | [Add Translation](https://github.com/donnemartin/system-design-primer/issues/28)*
 
-**Help [translate](TRANSLATIONS.md) this guide!**
+**Ajude a [traduzir](TRANSLATIONS.md) esse guia!**
 
-# The System Design Primer
+# A Cartilha do Design de Sistemas
 
 <p align="center">
   <img src="images/jj3A5N8.png">
   <br/>
 </p>
 
-## Motivation
+## Motivação
 
-> Learn how to design large-scale systems.
+> Aprender como desenvolver sistemas em larga escala.
 >
-> Prep for the system design interview.
+> Preparação para entrevista de design de sistemas
 
-### Learn how to design large-scale systems
+### Aprenda como desenvolver sistemas em larga escala
 
-Learning how to design scalable systems will help you become a better engineer.
+Aprender como desenvolver sistemas escaláveis irá ajuda-lo a se tornar um engenheiro melhor.
 
-System design is a broad topic.  There is a **vast amount of resources scattered throughout the web** on system design principles.
+Design de sistemas é um assunto amplo. Existe uma **enorme quantidade de recursos espalhados pela internet** sobre princípios de design de sistemas.
 
-This repo is an **organized collection** of resources to help you learn how to build systems at scale.
+### Aprenda com a comunidade open source
 
-### Learn from the open source community
+Esse é um projeto open source atualizado constantemente.
 
-This is a continually updated, open source project.
+[Contribuições](#como-contribuir) são bem vindas!
 
-[Contributions](#contributing) are welcome!
+### Preparação para uma entrevista de design de sistemas
 
-### Prep for the system design interview
+Em adição as entrevistas de código, design de sistemas é um **componente obrigatório** no **processo seletivo técnico** em muitas empresas de tecnologia.
 
-In addition to coding interviews, system design is a **required component** of the **technical interview process** at many tech companies.
+**Pratique questões comuns de entrevistas de design de sistemas** e **compare** seus resultados com **amostras de soluções**: discussões, código e diagramas.
 
-**Practice common system design interview questions** and **compare** your results with **sample solutions**: discussions, code, and diagrams.
+Tópicos adicionais para uma entrevista:
 
-Additional topics for interview prep:
-
-* [Study guide](#study-guide)
-* [How to approach a system design interview question](#how-to-approach-a-system-design-interview-question)
-* [System design interview questions, **with solutions**](#system-design-interview-questions-with-solutions)
-* [Object-oriented design interview questions, **with solutions**](#object-oriented-design-interview-questions-with-solutions)
-* [Additional system design interview questions](#additional-system-design-interview-questions)
+* [Guia de estudos](#guia-de-estudos)
+* [Como abordar questões de design de sistemas em entrevistas](#how-to-approach-a-system-design-interview-question)
+* [Questões sobre design de sistemas, **com soluções**](#system-design-interview-questions-with-solutions)
+* [Questões sobre orientação a objetos, **com soluções**](#object-oriented-design-interview-questions-with-solutions)
+* [Questões adicionais sobre design de sistemas](#additional-system-design-interview-questions)
 
 ## Anki flashcards
 
@@ -50,47 +48,51 @@ Additional topics for interview prep:
   <br/>
 </p>
 
-The provided [Anki flashcard decks](https://apps.ankiweb.net/) use spaced repetition to help you retain key system design concepts.
+O [Anki flashcard](https://apps.ankiweb.net/) usa repetição espaçada para ajuda você a reter conceitos chaves em design de sistemas.
 
 * [System design deck](https://github.com/donnemartin/system-design-primer/tree/master/resources/flash_cards/System%20Design.apkg)
 * [System design exercises deck](https://github.com/donnemartin/system-design-primer/tree/master/resources/flash_cards/System%20Design%20Exercises.apkg)
 * [Object oriented design exercises deck](https://github.com/donnemartin/system-design-primer/tree/master/resources/flash_cards/OO%20Design.apkg)
 
-Great for use while on-the-go.
+Muito bom para ser usado em qualquer lugar.
 
-### Coding Resource: Interactive Coding Challenges
+### Recursos de Código: Desafios de Código Interativos
 
-Looking for resources to help you prep for the [**Coding Interview**](https://github.com/donnemartin/interactive-coding-challenges)?
+Procurando por recursos para se preparar para uma [**Entrevista de Código**](https://github.com/donnemartin/interactive-coding-challenges)?
 
 <p align="center">
   <img src="images/b4YtAEN.png">
   <br/>
 </p>
 
-Check out the sister repo [**Interactive Coding Challenges**](https://github.com/donnemartin/interactive-coding-challenges), which contains an additional Anki deck:
+De uma conferida no nosso repositório [**Interactive Coding Challenges**](https://github.com/donnemartin/interactive-coding-challenges), que contém um Anki deck adicional:
 
 * [Coding deck](https://github.com/donnemartin/interactive-coding-challenges/tree/master/anki_cards/Coding.apkg)
 
-## Contributing
+## Como Contribuir
 
-> Learn from the community.
+> Aprenda com a comunidade.
 
-Feel free to submit pull requests to help:
+Fique a vontade para submeter pull requests que nos ajude a:
 
-* Fix errors
-* Improve sections
-* Add new sections
-* [Translate](https://github.com/donnemartin/system-design-primer/issues/28)
+* Corrigir erros
+* Improve sections Melhorar seções
+* Add new sections Adicionar novas seções
+* [Traduções](https://github.com/donnemartin/system-design-primer/issues/28)
 
 Content that needs some polishing is placed [under development](#under-development).
 
+Conteúdo que necessita de algum polimento ou revisão é colocado em [under development](#under-development).
+
 Review the [Contributing Guidelines](CONTRIBUTING.md).
 
-## Index of system design topics
+Revise o [Guia para Contribuições](CONTRIBUTING.md).
 
-> Summaries of various system design topics, including pros and cons.  **Everything is a trade-off**.
+## Tópicos em design de sistemas
+
+> Resume diversos tópicos em design de sistemas, incluino prós e contras. **Tudo é um trade-off**
 >
-> Each section contains links to more in-depth resources.
+> Cada seção contém links para páginas que detalham melhor o assunto.
 
 <p align="center">
   <img src="images/jrUBAF7.png">
@@ -179,27 +181,27 @@ Review the [Contributing Guidelines](CONTRIBUTING.md).
 * [Contact info](#contact-info)
 * [License](#license)
 
-## Study guide
+## Guia de Estudos
 
-> Suggested topics to review based on your interview timeline (short, medium, long).
+> Tópicos sugeridos para revisão baseado na disponibilidade e tempo até a entrevista (curto, médio e longo)
 
 ![Imgur](images/OfVllex.png)
 
-**Q: For interviews, do I need to know everything here?**
+**P: Para entrevistas, eu preciso saber tudo?**
 
-**A: No, you don't need to know everything here to prepare for the interview**.
+**P: Não, você não precisa saber tudo para se preparar para a entrevista**.
 
-What you are asked in an interview depends on variables such as:
+O que vão perguntar na entrevista depende de varáveis como:
 
-* How much experience you have
-* What your technical background is
-* What positions you are interviewing for
-* Which companies you are interviewing with
-* Luck
+* Quanta experiência você tem
+* Qual o seu fundamento (_background_) técnico
+* Para qual a posição que você está sendo entrevistado
+* Para qual empresa você será entrevistado
+* Sorte
 
-More experienced candidates are generally expected to know more about system design.  Architects or team leads might be expected to know more than individual contributors.  Top tech companies are likely to have one or more design interview rounds.
+Normalmente, espera-se que candidatos com mais experiência tenham conhecimento maior sobre design de sistemas. Espera-se que arquitetos ou lideres tenham mais conhecimento do que contribuidores individuais. As maiores empresas de tecnologia costumam ter uma ou mais rodadas de entrevistas em design de sistemas.
 
-Start broad and go deeper in a few areas.  It helps to know a little about various key system design topics.  Adjust the following guide based on your timeline, experience, what positions you are interviewing for, and which companies you are interviewing with.
+Começe a estudar de forma mais ampla e se aprofunde em algumas áreas. Isso irá ajuda-lo a entender um pouco sobre os diversos tópicos chaves em design de sistemas. Ajuste o guia baseando-se no seu tempo disponível, na sua experiência, para as posições que você está pleiteano e para quais empresas você fará uma entrevista.
 
 * **Short timeline** - Aim for **breadth** with system design topics.  Practice by solving **some** interview questions.
 * **Medium timeline** - Aim for **breadth** and **some depth** with system design topics.  Practice by solving **many** interview questions.
